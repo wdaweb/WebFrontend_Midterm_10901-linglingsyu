@@ -1,0 +1,26 @@
+body{
+  font-family: 'Tenali Ramakrishna','Noto Sans TC', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#profile{
+  line-height: 1;
+}
+
+#about{
+  line-height:2;
+  font-size: 0.5rem;
+}
+
+#icon-profile{
+  left:0;
+  top:0;
+  line-height:1.5;
+}
+
+#ling table{
+  font-size: 0.7rem;
+}
+
+#ling small{
+  font-size: 0.7rem;
+}
