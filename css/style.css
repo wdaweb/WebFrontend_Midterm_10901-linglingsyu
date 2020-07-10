@@ -1,4 +1,4 @@
-body{
+/* body{
   font-family: 'Tenali Ramakrishna','Noto Sans TC', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -23,4 +23,15 @@ body{
 
 #ling small{
   font-size: 0.7rem;
+} */
+
+#header{
+  background-color:#000000;
+  color:#ffffff;
+  height:100vh;
+}
+
+.jumbotron{
+  margin-bottom:0;
+
 }
