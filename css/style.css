@@ -122,15 +122,6 @@
  
  #study h6 {
      font-size: 2rem;
-     padding: 0 15px;
- }
- 
- #study h6:before {
-     content: "";
-     width: 3px;
-     height: 1.5rem;
-     background-color: #000;
-     display: inline-block;
  }
  
  #study .studyb {
@@ -146,6 +137,15 @@
  
  #study .date {
      font-size: 2.3rem;
+ }
+ 
+ #study .timeline li:nth-child(odd) {
+     content: "";
+     display: inline-block;
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     background-color: #be9063;
  }
  
  #portfolio .nav-link {
