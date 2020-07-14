@@ -20,15 +20,16 @@
 
 
   <div class="container-fluid" id="header">
-    <!-- navbar -->
-    <nav id="navbar-example2" class="navbar navbar-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <!-- navbar --> 
+    <nav id="navbar" class="navbar navbar-light d-none d-md-flex">
+      <!-- justify-content-end -->
+      <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="#about">About me</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#study">Study</a>
+          <a class="nav-link" href="#study">Education</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#work">Work</a>
@@ -41,10 +42,41 @@
         </li>
       </ul>
     </nav>
-    <div id="top" class="row flex-column justify-content-start align-items-center text-center my-5 h-100">
+
+    <div class="fixed-top d-md-none d-flex justify-content-end">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#study">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+
+
+    <div id="top" class="row flex-column justify-content-start align-items-center text-center h-100 pt-5">
       <img src="https://picsum.photos/100/100/?random=1">
       <div class="my-3">
-        <h1>許瑞玲 <small>, Elsa Syu </small></h1>
+        <h1>許瑞玲<span style="font-size:1rem;"> Elsa Syu</span></h1>
         <h6 class="my-3"> Becoming a web developer</h6>
         <div class="link my-3">
           <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -210,20 +242,20 @@
       <p class="lead">
         <ul class="nav justify-content-center ">
           <li class="nav-item">
-            <a class="nav-link active" href="#">All</a>
+            <button class="nav-link active"  onclick="todosort('all')">All</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PHP</a>
+            <button class="nav-link" onclick="todosort('php')" >PHP</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Javascript</a>
+            <button class="nav-link" onclick="todosort('js')" href="#">JS/jQ</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PS/AI</a>
+            <button class="nav-link" onclick="todosort('ps')" href="#">PS/AI</button>
           </li>
         </ul>
         作品集區
-        <div class="card">
+        <div class="card PHP">
           <img src="/img/invoice.png" class="card-img-top" >
           <div class="card-body">
             <h5 class="card-title">發票對獎系統</h5>
@@ -239,7 +271,7 @@
           </div>
         </div>
 
-        <div class="card mt-3">
+        <div class="card mt-3 PHP">
           <img src="/img/invoice.png" class="card-img-top" >
           <div class="card-body">
             <h5 class="card-title">萬年曆</h5>
@@ -255,7 +287,7 @@
           </div>
         </div>
 
-        <div class="card mt-3">
+        <div class="card mt-3 JS">
           <img src="/img/invoice.png" class="card-img-top" >
           <div class="card-body">
             <h5 class="card-title">數位時鐘</h5>
@@ -271,7 +303,7 @@
           </div>
         </div>
 
-        <div class="card mt-3">
+        <div class="card mt-3 JS">
           <img src="/img/invoice.png" class="card-img-top" >
           <div class="card-body">
             <h5 class="card-title">類比時鐘</h5>
@@ -287,7 +319,7 @@
           </div>
         </div>
 
-        <div class="card mt-3">
+        <div class="card mt-3 PHP">
           <img src="/img/invoice.png" class="card-img-top" >
           <div class="card-body">
             <h5 class="card-title">履歷表後台</h5>
@@ -303,7 +335,7 @@
           </div>
         </div>
 
-        <div class="card mt-3">
+        <div class="card mt-3 JS">
           <img src="/img/invoice.png" class="card-img-top" >
           <div class="card-body">
             <h5 class="card-title">二選一問答 </h5>

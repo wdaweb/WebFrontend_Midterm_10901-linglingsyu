@@ -5,6 +5,16 @@
   font-family:'Roboto','Noto Sans TC', sans-serif;
 }
 
+
+#navbar a{
+  color:#ffffff;
+  padding-bottom: 2px;
+  border-radius: 0%;
+}
+#navbar a:hover{
+  border-bottom: 2px solid #BE9063;
+}
+
 #header{
   background-color:#132226;
   color:#ffffff;
@@ -49,12 +59,20 @@
   color:#132226;
 }
 
+.show{
+  display: block;
+}
+
 #about{
   position: relative;
   z-index: 2;
   height: 100vh;
 }
 
+#portfolio .nav-link{
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
 
 
 
