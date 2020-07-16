@@ -9,6 +9,7 @@
      color: #ffffff;
      padding-bottom: 2px;
      border-radius: 0%;
+     font-size: 1.5rem;
  }
  
  #navbar a:hover {
@@ -33,7 +34,7 @@
  }
  
  #top a {
-     font-size: 1.5rem;
+     font-size: 2rem;
      margin: 0 3px;
      color: #ffffff;
  }
@@ -134,32 +135,95 @@
      text-align: right;
      transform: translateY(-25%);
  }
+
+ #skill h1{
+    background:linear-gradient(-24deg,#132226 36%,#fff 26%);
+    color:#ffffff;   
+}
  
  #study .date {
      font-size: 2.3rem;
  }
- 
- #study .timeline li:nth-child(odd) {
-     content: "";
-     display: inline-block;
-     width: 15px;
-     height: 15px;
-     border-radius: 50%;
-     background-color: #be9063;
+
+ #skill .progress {
+     background-color: #132226;
  }
+ 
+ #skill .progress-bar {
+     background-color: #16235A;
+ }
+
+
+ 
+ #portfolio{
+    background-color: #ffffff;
+    color:#442403;
+ }
+
+ #portfolio h1{
+     background:linear-gradient(-24deg,#fff 36% ,#132226 26%);
+     color:#ffffff;   
+ }
+
+
+ #portfolio h5{
+     color:#040c0E;
+     border-bottom:1px solid #8f1108;
+     padding-bottom: 0.3rem;
+ }
+
+
  
  #portfolio .nav-link {
-     padding: 0.5rem;
-     font-size: 0.8rem;
+     padding:0 0.5rem;
+     font-size: 1.2rem;
+     margin-bottom: 1rem;
+     font-weight: 700;
  }
+
+ #portfolio .nav-link:focus{
+     box-shadow: none;
+     border-bottom:1px solid #040c0E;
+     border-radius: 0;
+     color:#bd2600;
+ }
+
  
  #portfolio .card {
      display: none;
+     border:1px solid #132226;
  }
  
  #portfolio .show {
      display: block;
  }
+ #portfolio .card-body .btn{
+     color:#132226;
+     border:none;
+     border-radius: 0;
+     display: inline-block;
+     width: 100%;
+     animation: shake 7s linear infinite ;
+ }
+
+ #portfolio .card-body .btn:focus{
+     box-shadow: none;
+ }
+
+ @keyframes shake{
+     form{
+         transform: translate(0.5px);
+     }to{
+        transform: translate(0);
+     }
+ }
+
+ #portfolio .card-body .fa-angle-double-right{
+    float:right;
+    font-size:1.5rem;
+ }
+ 
+
  
  @media (min-width: 768px) {
      #header::after {
@@ -234,6 +298,10 @@
      #about {
          background: linear-gradient(-140deg, #be9063 50%, #525B56 50%);
      }
+
+    #portfolio .nav-item{
+         width:10%;
+    }
  }
  
  @media (max-width: 400px) {
