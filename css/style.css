@@ -137,8 +137,9 @@
  }
 
  #skill h1{
-    background:linear-gradient(-24deg,#132226 36%,#fff 26%);
-    color:#ffffff;   
+    background: linear-gradient(-24deg,#132226 59%,#fff 26%);
+    color: #ffffff;
+    text-align: right; 
 }
  
  #study .date {
@@ -161,8 +162,9 @@
  }
 
  #portfolio h1{
-     background:linear-gradient(-24deg,#fff 36% ,#132226 26%);
-     color:#ffffff;   
+    background: linear-gradient(-24deg,#FFF 38% ,#132226 26%);
+    color: #ffffff;
+    font-size: 2rem; 
  }
 
 
@@ -210,6 +212,8 @@
      box-shadow: none;
  }
 
+
+
  @keyframes shake{
      form{
          transform: translate(0.5px);
@@ -222,8 +226,50 @@
     float:right;
     font-size:1.5rem;
  }
- 
 
+ #portfolio .card-body .js{
+    background-color: #ffd541;
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    border-radius: 9px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.7rem;
+ }
+
+ #portfolio .card-body .ajax{
+    display: inline-block;
+    padding: 0.01rem 0.3rem;
+    border-radius: 9px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.7rem;
+    border: 1px solid #58aae8;
+    color: #58aae8;
+ }
+ 
+ #portfolio .card-body .php{
+    background-color: #d3beea;
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    border-radius: 9px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.7rem;
+ }
+
+ #portfolio .card-body .mysql{
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    border-radius: 9px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #3c4e57
+ }
+ #portfolio .card-body .my{
+     color:#e67e1f;
+ }
  
  @media (min-width: 768px) {
      #header::after {
