@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&family=Baloo+Da+2:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -26,10 +26,8 @@
 
 
     <div class="container-fluid" id="header">
-        <!-- navbar -->
         <nav id="navbar" class="navbar navbar-light d-none d-md-flex">
-            <!-- justify-content-end -->
-            <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+            <span class="navbar-brand"><img src="img/logo.png" class="w-75"></span>
             <ul class="nav nav-pills">
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -80,26 +78,26 @@
             </nav>
         </div>
 
-
-        <div id="top" class="row flex-column justify-content-cneter align-items-center text-center h-100 pt-5">
-            <img src="img/me.png" style="width: 50%;">
+        <div id="top" class="row flex-column justify-content-cneter align-items-center text-center h-100 pt-5 pt-md-0">
+            <div style="width:300px;"><img src="img/me.png" class="rounded mx-auto w-50 wow bounceInDown" ></div>
             <div class="my-4">
-                <h1>許瑞玲<span style="font-size:1rem;"> Elsa Syu</span></h1>
-                <h6 class="my-3"> Becoming a web developer</h6>
-                <div class="link my-3">
+                <h1 class="wow flipInX">許瑞玲<span style="font-size:1rem;"> Elsa Syu</span></h1>
+                <h6 class="my-3 wow flipInX"> Becoming a web developer</h6>
+                <div class="link my-3 wow backInLeft">
                     <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-github-square"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-github-alt"></i></a>
                 </div>
-            </div>
-            <a href="#" class="btn">歡迎了解我更多</a>
+            </div>     
+                   <a href="#about" class="more"><i class="fas fa-angle-double-down"></i></a>
         </div>
     </div>
+
     <div class="container-fluid d-flex justify-content-center align-items-center" id="about">
         <div class="container">
             <div class="w-100 ">
-                <h2 class="text-center mt-5 aboutme ">About me</h2>
+                <h2 class="text-center my-3  ">About me</h2>
                 <div class="aboutb ">
                     <div class="d-block d-md-flex justify-content-center align-items-center ">
                         <div class="py-1"><i class="fas fa-birthday-cake"></i> 1988/11/26</div>
@@ -120,22 +118,22 @@
         </div>
     </div>
 
-    <div class="container-fluid d-flex justify-content-center align-items-center " id="study">
+    <div class="container-fluid d-flex justify-content-center align-items-center mt-5" id="study">
         <div class="container">
-            <h2 class="text-center mt-5">Education</h2>
-            <div class="studyb ">
-                <div class="d-flex justify-content-start align-items-center">
-                    <ul class="timeline ">
-                        <li class="text-right date wow fadeInUp">Stp,2007 ~ Jun,2011</li>
-                        <li>
-                            <h6>泰山職訓中心</h6>PHP資料庫網頁設計
-                        </li>
-                        <li class="date wow fadeInUp">Stp,2007 ~ Jun,2011</li>
-                        <li>
-                            <h6>國立雲林科技大學</h6>企業管理系
-                        </li>
-                    </ul>
-                </div>
+            <h2 class="text-center">Education</h2>
+            <div class="d-flex justify-content-center align-items-center my-5">
+                <ul class="timeline clearfix">
+                    <li>
+                        <h6>泰山職訓中心 PHP資料庫網頁設計</h6>
+                        Mar,2020 ~ Agu,2020
+                        <p class="mt-3">登入系統、資料庫CRUD、上傳檔案處理、RWD一頁式網頁、<br>Javascript小遊戲、Ajax</p>
+                    </li>
+                    <li>
+                        <h6>國立雲林科技大學 企業管理系</h6>
+                        Sep,2007 ~ Jun,2011
+                        <p class="mt-3">主修統計學、管理學、會計學、行銷學等</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -145,17 +143,17 @@
     <div class="container-fluid d-flex justify-content-center align-items-center" id="work">
         <div class="container">
             <h2 class="text-center">Work Experience</h2>
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center my-5">
                 <ul class="timeline clearfix">
-                    <li class="text-right">Feb,2014 ~ Stp,2019</li>
                     <li>
                         <h6>馥瑞馨國際有限公司 業務助理</h6>
-                        工作內容：<br> 銷貨、電話接聽、請款、業績計算、營業報表製作等。
+                        Feb,2014 ~ Stp,2019
+                        <p class="mt-3"> 銷貨、電話接聽、請款、業績計算、營業報表製作等。</p>
                     </li>
-                    <li class="text-right">Agu,2011 ~ Agu,2012</li>
                     <li>
                         <h6>聯府塑膠股份有限公司 會計助理</h6>
-                        工作內容：<br> 營業稅申報、會計資料整理、資料登記、其他主管交代事項。
+                        Agu,2011 ~ Agu,2012
+                        <p class="mt-3"> 營業稅申報、會計資料整理、資料登記、其他主管交代事項。</p>
                     </li>
                 </ul>
             </div>
@@ -264,8 +262,8 @@
                                 <ul class=" mt-2">
                                     <li>一鍵對獎</li>
                                 </ul>
-                                <a target="_blank" href="http://220.128.133.15/s1090221/invoice/index.php" class="btn clearfix"><i
-                                        class="fas fa-angle-double-right"></i></a>
+                                <a target="_blank" href="http://220.128.133.15/s1090221/invoice/index.php"
+                                    class="btn clearfix"><i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -279,7 +277,8 @@
                                 <ul class="mt-2">
                                     <li>支援RWD</li>
                                 </ul>
-                                <a href="#" target="_blank" class="btn clearfix"><i class="fas fa-angle-double-right"></i></a>
+                                <a href="#" target="_blank" class="btn clearfix"><i
+                                        class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
