@@ -318,6 +318,10 @@ h3{
   font-size: 1.5rem;
 }
 
+#portfolio .card-body li{
+  font-size: 1rem;
+}
+
 #portfolio .card-body .js {
   background-color: #ffd541;
   display: inline-block;
@@ -457,7 +461,7 @@ padding:1rem;
   background:#ffffff;
   border:1px solid #000;
   opacity: 0.7;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: fixed;
   right:1rem;
   bottom:1rem;
@@ -485,6 +489,31 @@ padding:1rem;
     90% {
         transform: translate(0, -4px);
     }
+}
+
+
+button:focus{
+  outline: none;
+}
+.navbar-toggler{
+  border:none;
+}
+.navbar-toggler-icon{
+  background-image: url("../icon/menu.svg") !important;
+}
+
+.menu{
+  background:rgb(0, 0, 0);
+  opacity: 0.5;
+  width:40%;
+}
+
+.menu a{
+  color: #ffffff;
+}
+
+.menu a:focus{
+  color:rgb(8, 255, 243);
 }
 
 
