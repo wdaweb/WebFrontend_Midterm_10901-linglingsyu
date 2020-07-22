@@ -54,6 +54,14 @@ $(window).scroll(function() {
 });
 
 
+function loading() {
+//  document.getElementById("load").style.display="none";
+  $("#load").fadeOut(2500);
+}
+window.onload = loading()
+
+
+
 
 
 
