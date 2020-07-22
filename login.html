@@ -111,23 +111,6 @@
     <div class="login">
         <form action="checklogin.php" method="POST" class="form">
             <h2>會員登入</h2>
-            <div class="status">
-                <?php 
-                    if(isset($_GET['status'])){
-                        switch($_GET['status']){
-                            case "0":{
-                                echo "<span>帳號密碼錯誤，請重新輸入</span>";
-                            break;
-                            }
-                            case "1":{
-                                echo "get=".$_GET['id'];
-                                header("location:list_user.php?id=".$_GET['id']);
-                            break;
-                            }
-                        }
-                    }      
-                ?>
-            </div>
             <div class="group">
                 <label for="acc">帳號</label>
                 <input type="text" name="acc" id="acc">
